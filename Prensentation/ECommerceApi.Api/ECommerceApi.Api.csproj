@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\ECommerceApi.Application\ECommerceApi.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ECommerceApi.Persistence\ECommerceApi.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
