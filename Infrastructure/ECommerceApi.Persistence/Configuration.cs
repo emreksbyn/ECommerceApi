@@ -14,7 +14,8 @@ namespace ECommerceApi.Persistence
                 configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/ECommerceApi.Api"));
                 configurationManager.AddJsonFile("appsettings.json");
 
-                return configurationManager.GetConnectionString("PostgreSqlConnectionString");
+                return configurationManager.GetConnectionString("MsSqlConnectionString");
+                //return configurationManager.GetConnectionString("PostgreSqlConnectionString");
             }
         }
     }
