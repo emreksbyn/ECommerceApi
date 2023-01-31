@@ -10,8 +10,8 @@ namespace ECommerceApi.Persistence
         public ECommerceApiDbContext CreateDbContext(string[] args)
         {
             DbContextOptionsBuilder<ECommerceApiDbContext> dbContextOptionsBuilder = new();
-            dbContextOptionsBuilder.UseSqlServer(Configuration.ConnectionString);
-            //dbContextOptionsBuilder.UseNpgsql(Configuration.ConnectionString);
+            //dbContextOptionsBuilder.UseSqlServer(Configuration.ConnectionString);
+            dbContextOptionsBuilder.UseNpgsql(Configuration.ConnectionString);
             return new(dbContextOptionsBuilder.Options);
         }
     }
